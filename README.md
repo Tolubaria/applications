@@ -1,9 +1,9 @@
-## applications
+# applications
 applications
 
-# Сборка проекта выполнена на Gulp
+## Сборка проекта выполнена на Gulp
 
-# В проекте используются:
+## В проекте используются:
 
 - HTML;
 - Reset.css;

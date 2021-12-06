@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;500&display=swap');
+
+@mixin text {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.813rem; //13px
+	color: $textColor-secondary;
+}
+
+@mixin time {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.25rem; //20px
+	color: $textColor;
+	text-align: right;
+}
+
+@mixin description-title {
+	font-family: 'Roboto', sans-serif;
+	font-style: bold;
+	font-weight: 700;
+	font-size: 0.875rem; //14px
+	color: $textColor;
+	text-align: left;
+}
+
+@mixin description-paragraphs {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.875rem; //14px
+	line-height: 19px;
+	color: $textColor;
+	// text-align: left;
+}
+
+@mixin categories-name {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 0.563rem; //9px;
+	line-height: 11px;
+	color: #C4C4C4;
+}

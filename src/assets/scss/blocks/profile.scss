@@ -1,0 +1,43 @@
+.profile {
+	&__avatar {
+		width: 3.375rem; //54px;
+		height: 3.375rem; //54px;
+		position: relative;
+		box-shadow: 0 7px 20px rgba(0, 0, 0, .25);
+		border-radius: 50%;
+	}
+	&__name {
+		font-size: 0.563rem; //9px
+		color: $textColor;
+	}
+	&__boxes {
+		margin: 1rem 0;
+		font-size: 1.2rem;
+		text-align: center;
+		border-bottom: 1px solid #F2EDED;
+		padding-bottom: 7px;
+		&__circle {
+			width: 36px;
+			height: 36px;
+			margin-left: 0.8rem;
+			background: $primary;
+			border-radius: 50%;
+			&__all {
+				background-color: #ffffff;
+				margin-left: 0.8rem;
+				width: 36px;
+				height: 36px;
+				border-radius: 50%;
+			}
+			&__icon {
+				padding-top: 8px;
+			}
+		}
+		&__span {
+			display: block;
+			padding: 9px 0px 16px 0px;
+			color: $textColor;
+			font-size: 0.563rem; //9px
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.sidebar {
+	width: $sidebar-width;
+	height: 100vh;
+	background-color: $secondary;
+	box-shadow: 5px 0px 15px rgba(#050505, .1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: $z-index-sidebar;	
+		&__content {
+			padding: 0 1rem;
+		}
+}
+
+.circle-crown {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 15px;
+	left: 55px;
+	background: #F7A90D;
+	border-radius: 50%;
+	&__img {
+		padding-bottom: 10px;
+	}
+}
+

@@ -51,11 +51,15 @@
 }
 
 .dropdowns-block {
-	width: 933px;
+	width: 58.313rem; //933px;
 	margin: 25px 0px 23px 0px;
 	@media only screen and (max-width: 480px) {
-		max-width: 360px;
-		margin: 0px 0px 15px 0px;
+		max-width: 22.5rem; //360px;
+		margin: 0px 0px 15px 30px;
+  	}
+	  @media only screen and (max-width: 320px) {
+		max-width: 18.75rem; //300px;
+		margin: 0px 0px 5px 0px;
   	}
 }
 
@@ -63,9 +67,6 @@
 	display: flex;
 	@media only screen and (max-width: 480px) {
 		flex-wrap: wrap;
-  	}
-	@media only screen and (max-width: 320px) {
-		display: block;
   	}
 }
 
@@ -83,112 +84,141 @@
 
 #datepicker {
 	border-top: none;
-	width: 160px;
-	@media only screen and (max-width: 320px) {
-		width: 125px;
-		height: 33px;
+	width: 10rem; //160px;
+	@media only screen and (max-width: 480px) {
+		width: 9.688rem; //155px;
+		height: 1.875rem; //30px;
 		margin-bottom: 10px;
   	}
-
+	@media only screen and (max-width: 320px) {
+		width: 7.188rem; //115px;
+		height: 1.875rem; //30px;
+		margin-bottom: 10px;
+  	}
 }
 
 input[type="text" i] {
 	padding-left: 30px;
-	@media only screen and (max-width: 320px) {
+	@media only screen and (max-width: 480px) {
 		padding-left: 15px;
+		font-size: 0.688rem; //11px;
   	}
 }
 
 .wrapper__type
 .ui-button {
-	width: 112px;
-	height: 29px;
+	max-width: 7rem; //112px;
+	height: 1.813rem; //29px;
 	margin-right: 8px;
 	background-color: #ffffff;
 	border: 1px solid #F2EDED;
 	border-top: none;
 	z-index: 1;
+	@media only screen and (max-width: 480px) {
+		max-width: 7.5rem; //120px;
+		height: 1.063rem; //17px;
+		margin-bottom: 10px;
+  	}
 	@media only screen and (max-width: 320px) {
-		width: 90px;
-		height: 17px;
+		width: 5rem; //80px;
 		margin-bottom: 10px;
   	}
 }
 
 .wrapper__status
 .ui-button {
-	width: 81px;
-	height: 29px;
+	max-width: 5.063rem; //81px;
+	height: 1.813rem; //29px;
 	margin-right: 8px;
 	background-color: #ffffff;
 	border: 1px solid #F2EDED;
 	border-top: none;
 	z-index: 1;
-	@media only screen and (max-width: 320px) {
-		width: 90px;
-		height: 17px;
+	@media only screen and (max-width: 480px) {
+		max-width: 7.5rem; //120px;
+		height: 1.063rem; //17px;
+		margin-bottom: 10px;
+  	}
+	  @media only screen and (max-width: 320px) {
+		width: 5rem; //80px;
 		margin-bottom: 10px;
   	}
 }
 
 .wrapper__categories
 .ui-button {
-	width: 102px;
-	height: 29px;
+	max-width: 6.375rem; //102px;
+	height: 1.813rem; //29px;
 	margin-right: 8px;
 	background-color: #ffffff;
 	border: 1px solid #F2EDED;
 	border-top: none;
 	z-index: 1;
+	@media only screen and (max-width: 480px) {
+		max-width: 7.5rem; //120px;
+		height: 1.063rem; //17px;
+		margin-bottom: 10px;
+  	}
 	@media only screen and (max-width: 320px) {
-		width: 90px;
-		height: 17px;
+		width: 5rem; //80px;
 		margin-bottom: 10px;
   	}
 }
 
 .wrapper__items
 .ui-button {
-	width: 134px;
-	height: 29px;
+	max-width: 8.375rem; //134px;
+	height: 1.813rem; //29px;
 	margin-right: 8px;
 	background-color: #ffffff;
 	border: 1px solid #F2EDED;
 	border-top: none;
 	z-index: 1;
+	@media only screen and (max-width: 480px) {
+		max-width: 7.5rem; //120px;
+		height: 1.063rem; //17px;
+		margin-bottom: 10px;
+  	}
 	@media only screen and (max-width: 320px) {
-		width: 90px;
-		height: 17px;
+		width: 5rem; //80px;
 		margin-bottom: 10px;
   	}
 }
 
 .wrapper__infoboxes
 .ui-button {
-	width: 139px;
-	height: 27px;
+	width: 8.688rem; //139px;
+	height: 1.688rem; //27px;
 	background-color: #ffffff;
 	border: 1px solid #F2EDED;
 	border-top: none;
 	z-index: 1;
+	@media only screen and (max-width: 480px) {
+		width: 7.5rem; //120px;
+		height: 1.063rem; //17px;
+		margin-bottom: 10px;
+  	}
 	@media only screen and (max-width: 320px) {
-		width: 90px;
-		height: 17px;
+		width: 5rem; //80px;
 		margin-bottom: 10px;
   	}
 }
 
 .wrapper-action
 .ui-button {
-	width: 122px;
-	height: 29px;
+	width: 7.625rem; //122px;
+	height: 1.813rem; //29px;
 	background-color: #ffffff;
 	border: 1px solid #F2EDED;
 	border-top: none;
 	z-index: 1;
 	@media only screen and (max-width: 480px) {
-		width: 80px;
-		height: 23px;
+		width: 4.375rem; //70px;
+		height: 1.438rem; //23px;
+  	}
+	@media only screen and (max-width: 320px) {
+		width: 140px;
+		height: 1.438rem; //23px;
   	}
 }
 
@@ -198,6 +228,9 @@ input[type="text" i] {
 	margin: 0px 0px -5px 12px;
 	@include categories-name;
 	z-index: 2;
+	@media only screen and (max-width: 480px) {
+		font-size: 0.438rem; //7px;
+  	}
 }
 
 .categories-name:before {
@@ -208,6 +241,9 @@ input[type="text" i] {
    border-bottom: 1px solid #F2EDED;
    top:40%;
    right: 14px;
+	@media only screen and (max-width: 320px) {
+		width: 5rem; //80px;
+  	}
 }
  
 .categories-name:after {
@@ -221,17 +257,29 @@ input[type="text" i] {
 }
 
 .categories-name-type:before {
-	width: 68px;
-	right: 11px;
+	width: 4.25rem; //68px;
+	right: 0.688rem; //11px;
+	@media only screen and (max-width: 480px) {
+		width: 5.625rem; //90px;
+  	}
+	@media only screen and (max-width: 320px) {
+		width: 3.125rem; //50px;
+  	}
 }
 .categories-name-type:after {
 	width: 6px;
-	left: -9px;
+	left: -9px;	
 }
 
 .categories-name-status:before {
 	width: 50px;
 	right: 11px;
+	@media only screen and (max-width: 480px) {
+		width: 100px;
+  	}
+	@media only screen and (max-width: 320px) {
+		width: 3.75rem; //60px;
+  	}
 }
 .categories-name-status:after {
 	width: 6px;
@@ -241,11 +289,23 @@ input[type="text" i] {
 .categories-name-categories:before {
 	width: 62px;
 	right: 12px;
+	@media only screen and (max-width: 480px) {
+		width: 95px;
+  	}
+	@media only screen and (max-width: 320px) {
+		width: 3.438rem; //55px;
+  	}
 }
 
 .categories-name-items:before {
 	width: 123px;
 	right: 12px;
+	@media only screen and (max-width: 480px) {
+		width: 115px;
+  	}
+	@media only screen and (max-width: 320px) {
+		width: 4.688rem; //75px;
+  	}
 }
 .categories-name-items:after {
 	width: 7px;
@@ -253,8 +313,14 @@ input[type="text" i] {
 }
 
 .categories-name-infoboxes:before {
-	width: 105px;
-	right: 5px;
+	width: 6.563rem; //105px;
+	right: 0.313rem; //5px;
+	@media only screen and (max-width: 480px) {
+		width: 6.25rem; //100px;
+  	}
+	@media only screen and (max-width: 320px) {
+		width: 3.75rem; //60px;
+  	}
 }
 .categories-name-infoboxes:after {
 	width: 8px;
@@ -264,11 +330,21 @@ input[type="text" i] {
 .categories-name-action:before {
 	width: 102px;
 	right: 5px;
+	@media only screen and (max-width: 480px) {
+		width: 62px;
+  	}
+	  @media only screen and (max-width: 320px) {
+		width: 130px;
+  	}
 }
 
 .ui-selectmenu-text {
 	padding-top: 5px;
-	@media only screen and (max-width: 320px) {
+	@media only screen and (max-width: 480px) {
+		padding-top: 2px;
+		font-size: 11px;
+  	}
+	  @media only screen and (max-width: 480px) {
 		font-size: 0.625rem; //10px;
   	}
 }
@@ -296,17 +372,21 @@ input[type="text" i] {
 .tbspan {
 	margin-bottom: 14px;
 	display: flex;
+	@media only screen and (max-width: 320px) {
+		max-width: 17.5rem; //280px;
+		flex-wrap: wrap;
+	}
 	&__arrow {
-		width: 7,5px;
-		height: 12px;
-		margin-bottom: 27px;
+		width: 0.5rem; //8px;
+		height: 0.688rem; //11px;
+		margin: 5px 0px 27px 0px;
 		@media only screen and (max-width: 480px) {
-			width: 7px;
-			height: 7px;
+			width: 0.438rem; //7px;
+			height: 0.438rem; //7px;
 		}
 		@media only screen and (max-width: 320px) {
-			width: 5px;
-			height: 5px;
+			width: 0.313rem; //5px;
+			height: 0.313rem; //5px;
 		}
 	}
 }
@@ -319,16 +399,24 @@ input[type="text" i] {
 	width: 4.063rem; //65px;
 	height: 1.5rem; //24px;
 	margin: 0px 23px 0px 27px;
+	@media only screen and (max-width: 480px) {
+		width: 3.438rem; //55px;
+		height: 1.25rem; //20px;
+		margin: 0px 10px 0px 5px;
+	}
+	@media only screen and (max-width: 320px) {
+		width: 2.813rem; //45px;
+		height: 1.25rem; //20px;
+		margin: 0px 10px 0px 5px;
+	}
 	&__text {
 		@include description-paragraphs;
 		@media only screen and (max-width: 480px) {
-			font-size: 14px;
+			font-size: 0.875rem; //14px;
 		}
-	}
-	@media only screen and (max-width: 480px) {
-		width: 55px;
-		height: 20px;
-		margin: 0px 10px 0px 15px;
+		@media only screen and (max-width: 320px) {
+			font-size: 0.688rem; //11px;
+		}
 	}
 }
 
@@ -336,25 +424,28 @@ input[type="text" i] {
 	display: block;
 	@include time;
 	@media only screen and (max-width: 480px) {
-		font-size: 14px;
+		font-size: 0.875rem; //14px;
+	}
+	@media only screen and (max-width: 320px) {
+		font-size: 0.688rem; //11px;
 	}
 }
 
 .clip {
-	width: 4px;
-	height: 54px;
+	width: 0.25rem; //4px;
+	height: 3.375rem; //54px;
 	margin-right: 30px;
 	clip-path: ellipse(120% 50% at 50% 50%);
 	background-color: $primary;
 	@media only screen and (max-width: 480px) {
-		height: 40px;
+		height: 2.5rem; //40px;
 		margin-right: 10px;
 	}
 }
 
 .circle {
-	width: 36px;
-	height: 36px;	
+	width: 2.25rem; //36px;
+	height: 2.25rem; //36px;	
 	border-radius: 50%;
 	background: $primary;
 	@media only screen and (max-width: 480px) {
@@ -392,25 +483,32 @@ input[type="text" i] {
 	width: 18.938rem; //303px;
 	margin-left: 14px;
 	@media only screen and (max-width: 480px) {
-		max-width: 200px;
+		max-width: 12.5rem; //200px;
+		margin-left: 0px;
+	}
+	@media only screen and (max-width: 320px) {
+		max-width: 11.25rem; //180px;
+		margin-left: 0px;
 	}
 	&__title {
 		@include description-title;
 		@media only screen and (max-width: 480px) {
-			font-size: 14px;
+			margin-bottom: 0.313rem; //5px;
+			font-size: 0.875rem; //14px;
 		}
 	}
 	&__paragraphs {
 		@include description-paragraphs;
 		@media only screen and (max-width: 480px) {
-			font-size: 11px;
+			font-size: 0.688rem; //11px;
 			line-height: 12px;
 		}
 	}
 }
+
 .btnstatus {
 	width: 6rem; //96px;
-	height: 30px;
+	height: 1.875rem; //30px;
 	margin-right: 173px;
 	display: flex;
 	background: #D4F8CB66;

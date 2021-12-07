@@ -8,24 +8,27 @@
 	left: 0;
 	z-index: $z-index-sidebar;
 	@media only screen and (max-width: 480px) {
-		width: 70px;
+		width: 3.75rem; //60px;
 	}
 		&__content {
 			padding: 0 1rem;
 		@media only screen and (max-width: 480px) {
-			padding: 0 0.2rem;
+			padding: 0 0rem;
 		}
 	}
 }
 
 .circle-crown {
 	position: absolute;
-	width: 16px;
-	height: 16px;
+	width: 1rem; //16px;
+	height: 1rem; //16px;
 	top: 15px;
 	left: 55px;
 	background: #F7A90D;
 	border-radius: 50%;
+	@media only screen and (max-width: 480px) {
+		left: 40px;
+	}
 	&__img {
 		padding-bottom: 10px;
 	}

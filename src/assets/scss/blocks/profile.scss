@@ -17,16 +17,16 @@
 		border-bottom: 1px solid #F2EDED;
 		padding-bottom: 7px;
 		&__circle {
-			width: 36px;
-			height: 36px;
+			width: 2.25rem; //36px;
+			height: 2.25rem; //36px;
 			margin-left: 0.8rem;
 			background: $primary;
 			border-radius: 50%;
 			&__all {
 				background-color: #ffffff;
 				margin-left: 0.8rem;
-				width: 36px;
-				height: 36px;
+				width: 2.25rem; //36px;
+				height: 2.25rem; //36px;
 				border-radius: 50%;
 			}
 			&__icon {

@@ -1,11 +1,18 @@
 .main {
 	width: 58.313rem; //933px;
 	padding-top: 3rem;
+	@media only screen and (max-width: 480px){
+		max-width: 480px;
+		padding-top: 2rem;
+  	}
 }
 .dynamicFilter {
 	display: flex;
 	justify-content: space-between;
 	margin: 46px 0px 9px 0px;
+	@media only screen and (max-width: 480px){
+		display: none;
+  	}
 	&__GooglSync {
 		display: flex;
 	}
@@ -38,15 +45,28 @@
 
 .line-dynamicFilter {
 	margin-left: 0px;
+	@media only screen and (max-width: 480px) {
+		display: none;
+  	}
 }
 
 .dropdowns-block {
 	width: 933px;
 	margin: 25px 0px 23px 0px;
+	@media only screen and (max-width: 480px) {
+		max-width: 360px;
+		margin: 0px 0px 15px 0px;
+  	}
 }
 
 .dropdowns {
 	display: flex;
+	@media only screen and (max-width: 480px) {
+		flex-wrap: wrap;
+  	}
+	@media only screen and (max-width: 320px) {
+		display: block;
+  	}
 }
 
 .dropdowns__item {
@@ -56,15 +76,27 @@
 	box-sizing: border-box;
 	border-radius: 5px;
 	margin-right: 9px;
+	@media only screen and (max-width: 480px) {
+		margin-bottom: 10px;
+  	}
 }
 
 #datepicker {
 	border-top: none;
 	width: 160px;
+	@media only screen and (max-width: 320px) {
+		width: 125px;
+		height: 33px;
+		margin-bottom: 10px;
+  	}
+
 }
 
 input[type="text" i] {
 	padding-left: 30px;
+	@media only screen and (max-width: 320px) {
+		padding-left: 15px;
+  	}
 }
 
 .wrapper__type
@@ -76,6 +108,11 @@ input[type="text" i] {
 	border: 1px solid #F2EDED;
 	border-top: none;
 	z-index: 1;
+	@media only screen and (max-width: 320px) {
+		width: 90px;
+		height: 17px;
+		margin-bottom: 10px;
+  	}
 }
 
 .wrapper__status
@@ -87,6 +124,11 @@ input[type="text" i] {
 	border: 1px solid #F2EDED;
 	border-top: none;
 	z-index: 1;
+	@media only screen and (max-width: 320px) {
+		width: 90px;
+		height: 17px;
+		margin-bottom: 10px;
+  	}
 }
 
 .wrapper__categories
@@ -98,6 +140,11 @@ input[type="text" i] {
 	border: 1px solid #F2EDED;
 	border-top: none;
 	z-index: 1;
+	@media only screen and (max-width: 320px) {
+		width: 90px;
+		height: 17px;
+		margin-bottom: 10px;
+  	}
 }
 
 .wrapper__items
@@ -109,6 +156,11 @@ input[type="text" i] {
 	border: 1px solid #F2EDED;
 	border-top: none;
 	z-index: 1;
+	@media only screen and (max-width: 320px) {
+		width: 90px;
+		height: 17px;
+		margin-bottom: 10px;
+  	}
 }
 
 .wrapper__infoboxes
@@ -119,6 +171,11 @@ input[type="text" i] {
 	border: 1px solid #F2EDED;
 	border-top: none;
 	z-index: 1;
+	@media only screen and (max-width: 320px) {
+		width: 90px;
+		height: 17px;
+		margin-bottom: 10px;
+  	}
 }
 
 .wrapper-action
@@ -129,6 +186,10 @@ input[type="text" i] {
 	border: 1px solid #F2EDED;
 	border-top: none;
 	z-index: 1;
+	@media only screen and (max-width: 480px) {
+		width: 80px;
+		height: 23px;
+  	}
 }
 
 .categories-name {
@@ -207,6 +268,9 @@ input[type="text" i] {
 
 .ui-selectmenu-text {
 	padding-top: 5px;
+	@media only screen and (max-width: 320px) {
+		font-size: 0.625rem; //10px;
+  	}
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active {
@@ -223,6 +287,12 @@ input[type="text" i] {
 	}
 }
 
+.hatch {
+	@media only screen and (max-width: 480px) {
+		display: none;
+  	}
+}
+
 .tbspan {
 	margin-bottom: 14px;
 	display: flex;
@@ -230,6 +300,14 @@ input[type="text" i] {
 		width: 7,5px;
 		height: 12px;
 		margin-bottom: 27px;
+		@media only screen and (max-width: 480px) {
+			width: 7px;
+			height: 7px;
+		}
+		@media only screen and (max-width: 320px) {
+			width: 5px;
+			height: 5px;
+		}
 	}
 }
 
@@ -243,12 +321,23 @@ input[type="text" i] {
 	margin: 0px 23px 0px 27px;
 	&__text {
 		@include description-paragraphs;
+		@media only screen and (max-width: 480px) {
+			font-size: 14px;
+		}
+	}
+	@media only screen and (max-width: 480px) {
+		width: 55px;
+		height: 20px;
+		margin: 0px 10px 0px 15px;
 	}
 }
 
 .time {
 	display: block;
 	@include time;
+	@media only screen and (max-width: 480px) {
+		font-size: 14px;
+	}
 }
 
 .clip {
@@ -257,6 +346,10 @@ input[type="text" i] {
 	margin-right: 30px;
 	clip-path: ellipse(120% 50% at 50% 50%);
 	background-color: $primary;
+	@media only screen and (max-width: 480px) {
+		height: 40px;
+		margin-right: 10px;
+	}
 }
 
 .circle {
@@ -264,6 +357,9 @@ input[type="text" i] {
 	height: 36px;	
 	border-radius: 50%;
 	background: $primary;
+	@media only screen and (max-width: 480px) {
+		display: none;
+	}
 }
 
 .clip-task, .task {
@@ -280,20 +376,36 @@ input[type="text" i] {
 
 .usa-icon {
 	margin: 9.6px 13px;
+	@media only screen and (max-width: 480px) {
+		margin: 5px 9px;
+	}
 }
 
 .event-icon {
 	margin: 9px 11px;
+	@media only screen and (max-width: 480px) {
+		margin: 4px 6px;
+	}
 }
 
 .description {
 	width: 18.938rem; //303px;
 	margin-left: 14px;
+	@media only screen and (max-width: 480px) {
+		max-width: 200px;
+	}
 	&__title {
 		@include description-title;
+		@media only screen and (max-width: 480px) {
+			font-size: 14px;
+		}
 	}
 	&__paragraphs {
 		@include description-paragraphs;
+		@media only screen and (max-width: 480px) {
+			font-size: 11px;
+			line-height: 12px;
+		}
 	}
 }
 .btnstatus {
@@ -314,6 +426,9 @@ input[type="text" i] {
 		margin: 6px;
 		@include description-paragraphs;
 		font-size: 0.813rem; //13px;
+	}
+	@media only screen and (max-width: 480px) {
+		display: none;
 	}
 }
 

@@ -3,10 +3,22 @@
 	left: 5.625rem; //90px;
 	background-color: #fff;
 	z-index: $z-index-header;
+	@media only screen and (max-width: 480px) {
+		left: 60px;
+  	}
+	@media only screen and (max-width: 320px) {
+		left: 70px;
+  	}
 		&__wrapper {
 			width: 84.375rem; //1350px;
 			display: flex;
 			justify-content: space-between;
+			@media only screen and (max-width: 480px) {
+				max-width: 350px;
+			}
+			@media screen and (max-width: 320px) {
+				max-width: 250px;
+			}
 		}
 		&__left {
 			display: flex;
@@ -14,6 +26,14 @@
 				margin: 22px 17px 0px 26px;
 				font-size: 1.875rem; //30px
 				color: $textColor;
+				@media only screen and (max-width: 480px) {
+					font-size: 18px;
+					margin: 18px 10px 0px 26px;
+				}
+				@media only screen and (max-width: 320px) {
+					font-size: 0.938rem; //15px;
+					margin: 18px 10px 0px 26px;
+				}
 			}
 			&__circle {
 				width: 2.875rem; //46px;
@@ -21,8 +41,26 @@
 				margin: 16px 0px 13px 0px;
 				background-color: $primary;
 				border-radius: 50%;
+				@media only screen and (max-width: 480px) {
+					max-width: 25px;
+					height: 25px;
+				}
+				@media only screen and (max-width: 320px) {
+					max-width: 1.25rem; //20px;
+					height: 1.25rem; //20px;
+				}
 				&__plus {
 					padding: 11px 0px 0px 12px;
+					@media only screen and (max-width: 480px) {
+						max-width: 15px;
+						height: 15px;
+						padding: 4px 0px 0px 5px;
+					}
+					@media only screen and (max-width: 320px) {
+						max-width: 0.625rem; //10px;
+						height: 0.625; //10px;
+						padding: 0px 0px 0px 6px;
+					}
 				}
 			}
 		}
@@ -33,16 +71,44 @@
 	margin: 29px 26px 0px 0px;
 	display: flex;
 	justify-content: space-between;
+	@media only screen and (max-width: 480px){
+		max-width: 5.625rem; //90px;
+		margin: 18px 10px 0px 0px;
+	}
+	@media only screen and (max-width: 320px){
+		max-width: 50px;
+		margin: 18px 35px 0px 0px;
+	}
 }
 
 .nav__item {
 	margin: 0px 27px 0px 0px;
+	@media only screen and (max-width: 480px) {
+		margin: 0px 15px 0px 0px;
+	}
+	@media only screen and (max-width: 320px) {
+		margin: 0px 10px 0px 0px;
+	}
 }
 
+.fa {
+	@media only screen and (max-width: 480px) {
+		max-width: 15px;
+	}
+	@media only screen and (max-width: 320px) {
+		max-width: 0.625rem; //10px;
+	}
+}
 .line {
 	max-width: 80.563rem; //1289px;
 	height: 0.125; //2px;
 	margin-left: 27px;
 	border-bottom: 1px solid #F2EDED;
+	@media only screen and (max-width: 480px) {
+		max-width: 360px;
+	}
+	@media only screen and (max-width: 320px) {
+		max-width: 210px;
+	}
 }
 

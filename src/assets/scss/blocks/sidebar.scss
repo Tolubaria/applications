@@ -6,10 +6,16 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: $z-index-sidebar;	
+	z-index: $z-index-sidebar;
+	@media only screen and (max-width: 480px) {
+		width: 70px;
+	}
 		&__content {
 			padding: 0 1rem;
+		@media only screen and (max-width: 480px) {
+			padding: 0 0.2rem;
 		}
+	}
 }
 
 .circle-crown {

@@ -1,23 +1,22 @@
 .header {
-	position: fixed;
-	left: 5.625rem; //90px;
+	margin-left: 5.625rem; //90px;
 	background-color: #fff;
 	z-index: $z-index-header;
 	@media only screen and (max-width: 480px) {
-		left: 2.813rem; //45px;
+		margin-left: 2.813rem; //45px;
   	}
 	@media only screen and (max-width: 320px) {
-		left: 45px;
+		margin-left: 45px;
   	}
 		&__wrapper {
-			width: 84.375rem; //1350px;
+			max-width: 84.375rem; //1350px;
 			display: flex;
 			justify-content: space-between;
 			@media only screen and (max-width: 480px) {
 				max-width: 25.625rem; //410px;
 			}
 			@media screen and (max-width: 320px) {
-				max-width: 250px;
+				max-width: 15.625rem; //250px;
 			}
 		}
 		&__left {

@@ -1,7 +1,11 @@
 .container {
-	max-width: 70rem;
+	max-width: 84.375rem; //1350px;
 	padding-left: 7rem;
 	@media only screen and (max-width: 480px){
+		max-width: 26.25rem; //420px;
 		padding-left: 4.3rem;
-  	}	
+  	}
+	  @media only screen and (max-width: 320px){
+		max-width: 16.25rem; //260px;
+  	}
 }

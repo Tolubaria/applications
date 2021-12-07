@@ -1,9 +1,11 @@
 .main {
 	width: 58.313rem; //933px;
-	padding-top: 3rem;
 	@media only screen and (max-width: 480px){
-		max-width: 480px;
-		padding-top: 2rem;
+		max-width: 26.25rem; //420px;
+		margin-top: 1.563rem; //25px
+  	}
+	  @media only screen and (max-width: 320px){
+		max-width: 16.25rem; //260px;
   	}
 }
 .dynamicFilter {
@@ -51,14 +53,14 @@
 }
 
 .dropdowns-block {
-	width: 58.313rem; //933px;
+	max-width: 58.313rem; //933px;
 	margin: 25px 0px 23px 0px;
 	@media only screen and (max-width: 480px) {
-		max-width: 22.5rem; //360px;
+		max-width: 26.25rem; //420px;
 		margin: 0px 0px 15px 30px;
   	}
 	  @media only screen and (max-width: 320px) {
-		max-width: 18.75rem; //300px;
+		max-width: 16.25rem; //260px;
 		margin: 0px 0px 5px 0px;
   	}
 }
@@ -372,9 +374,12 @@ input[type="text" i] {
 .tbspan {
 	margin-bottom: 14px;
 	display: flex;
-	@media only screen and (max-width: 320px) {
-		max-width: 17.5rem; //280px;
+	@media only screen and (max-width: 480px) {
+		max-width: 26.25rem; //420px;
 		flex-wrap: wrap;
+	}
+	@media only screen and (max-width: 320px) {
+		max-width: 16.25rem; //260px;
 	}
 	&__arrow {
 		width: 0.5rem; //8px;
@@ -400,19 +405,17 @@ input[type="text" i] {
 	height: 1.5rem; //24px;
 	margin: 0px 23px 0px 27px;
 	@media only screen and (max-width: 480px) {
-		width: 3.438rem; //55px;
+		max-width: 3rem; //48px;
 		height: 1.25rem; //20px;
-		margin: 0px 10px 0px 5px;
+		margin: 0px 7px 0px 5px;
 	}
 	@media only screen and (max-width: 320px) {
 		width: 2.813rem; //45px;
-		height: 1.25rem; //20px;
-		margin: 0px 10px 0px 5px;
 	}
 	&__text {
 		@include description-paragraphs;
 		@media only screen and (max-width: 480px) {
-			font-size: 0.875rem; //14px;
+			font-size: 0.75rem; //12px;
 		}
 		@media only screen and (max-width: 320px) {
 			font-size: 0.688rem; //11px;
@@ -424,7 +427,7 @@ input[type="text" i] {
 	display: block;
 	@include time;
 	@media only screen and (max-width: 480px) {
-		font-size: 0.875rem; //14px;
+		font-size: 0.75rem; //12px;
 	}
 	@media only screen and (max-width: 320px) {
 		font-size: 0.688rem; //11px;
@@ -483,11 +486,11 @@ input[type="text" i] {
 	width: 18.938rem; //303px;
 	margin-left: 14px;
 	@media only screen and (max-width: 480px) {
-		max-width: 12.5rem; //200px;
+		max-width: 11.25rem; //180px;
 		margin-left: 0px;
 	}
 	@media only screen and (max-width: 320px) {
-		max-width: 11.25rem; //180px;
+		max-width: 10rem; //160px;
 		margin-left: 0px;
 	}
 	&__title {

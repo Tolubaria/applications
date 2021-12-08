@@ -1,8 +1,10 @@
 .main {
 	max-width: 58.313rem; //933px;
+	margin-right: -110px;
 	@media only screen and (max-width: 480px){
 		max-width: 26.25rem; //420px;
 		margin-top: 1.563rem; //25px
+		margin-right: 0px;
   	}
 	  @media only screen and (max-width: 320px){
 		max-width: 16.25rem; //260px;
@@ -190,19 +192,19 @@ input[type="text" i] {
 
 .wrapper__infoboxes
 .ui-button {
-	width: 8.688rem; //139px;
+	max-width: 8.688rem; //139px;
 	height: 1.688rem; //27px;
 	background-color: #ffffff;
 	border: 1px solid #F2EDED;
 	border-top: none;
 	z-index: 1;
 	@media only screen and (max-width: 480px) {
-		width: 7.5rem; //120px;
+		max-width: 7.5rem; //120px;
 		height: 1.063rem; //17px;
 		margin-bottom: 10px;
   	}
 	@media only screen and (max-width: 320px) {
-		width: 5rem; //80px;
+		max-width: 5rem; //80px;
 		margin-bottom: 10px;
   	}
 }

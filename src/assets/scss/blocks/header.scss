@@ -13,10 +13,10 @@
 			display: flex;
 			justify-content: space-between;
 			@media only screen and (max-width: 480px) {
-				max-width: 25.625rem; //410px;
+				max-width: 26.25rem; //420px;
 			}
 			@media screen and (max-width: 320px) {
-				max-width: 15.625rem; //250px;
+				max-width: 16.25rem; //20px;
 			}
 		}
 		&__left {
@@ -72,7 +72,7 @@
 	justify-content: space-between;
 	@media only screen and (max-width: 480px){
 		max-width: 5.625rem; //90px;
-		margin: 20px 10px 0px 0px;
+		margin: 20px 20px 0px 0px;
 	}
 	@media only screen and (max-width: 320px){
 		max-width: 3.125rem; //50px;

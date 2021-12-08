@@ -1,5 +1,5 @@
 .main {
-	width: 58.313rem; //933px;
+	max-width: 58.313rem; //933px;
 	@media only screen and (max-width: 480px){
 		max-width: 26.25rem; //420px;
 		margin-top: 1.563rem; //25px
@@ -9,6 +9,7 @@
   	}
 }
 .dynamicFilter {
+	max-width: 58.313rem; //933px;
 	display: flex;
 	justify-content: space-between;
 	margin: 46px 0px 9px 0px;
@@ -19,7 +20,7 @@
 		display: flex;
 	}
 	&__box-btn {
-		height: 34px;
+		height: 2.125rem; //34px;
 	}
 	&__btn {
 		width: 5.938rem; //95px;
@@ -57,11 +58,11 @@
 	margin: 25px 0px 23px 0px;
 	@media only screen and (max-width: 480px) {
 		max-width: 26.25rem; //420px;
-		margin: 0px 0px 15px 30px;
+		margin: 0px 0px 15px 20px;
   	}
 	  @media only screen and (max-width: 320px) {
 		max-width: 16.25rem; //260px;
-		margin: 0px 0px 5px 0px;
+		margin: 0px 0px 5px 60px;
   	}
 }
 
@@ -215,11 +216,11 @@ input[type="text" i] {
 	border-top: none;
 	z-index: 1;
 	@media only screen and (max-width: 480px) {
-		width: 4.375rem; //70px;
+		width: 3.625rem; //58px;
 		height: 1.438rem; //23px;
   	}
 	@media only screen and (max-width: 320px) {
-		width: 140px;
+		width: 8.75rem; //140px;
 		height: 1.438rem; //23px;
   	}
 }
@@ -380,6 +381,7 @@ input[type="text" i] {
 	}
 	@media only screen and (max-width: 320px) {
 		max-width: 16.25rem; //260px;
+		margin-bottom: 20px;
 	}
 	&__arrow {
 		width: 0.5rem; //8px;
@@ -441,8 +443,9 @@ input[type="text" i] {
 	clip-path: ellipse(120% 50% at 50% 50%);
 	background-color: $primary;
 	@media only screen and (max-width: 480px) {
+		width: 0.188rem; //3px;
 		height: 2.5rem; //40px;
-		margin-right: 10px;
+		margin-right: 7px;
 	}
 }
 
@@ -490,8 +493,9 @@ input[type="text" i] {
 		margin-left: 0px;
 	}
 	@media only screen and (max-width: 320px) {
-		max-width: 10rem; //160px;
+		max-width: 110px;
 		margin-left: 0px;
+		margin-bottom: 5px;
 	}
 	&__title {
 		@include description-title;
@@ -516,6 +520,9 @@ input[type="text" i] {
 	display: flex;
 	background: #D4F8CB66;
 	border-radius: 20px;
+	@media only screen and (max-width: 480px) {
+		display: none;
+	}
 	&__point {
 		width: 0.5rem; //8px;
 		height: 0.5rem; //8px;
@@ -527,9 +534,6 @@ input[type="text" i] {
 		margin: 6px;
 		@include description-paragraphs;
 		font-size: 0.813rem; //13px;
-	}
-	@media only screen and (max-width: 480px) {
-		display: none;
 	}
 }
 
